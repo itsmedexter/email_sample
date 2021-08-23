@@ -36,7 +36,7 @@ img{
   width: 100%;
   table-layout: fixed;
   background-color: #cccccc;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .main{
@@ -47,6 +47,39 @@ img{
   border-spacing: 0;
   font-family: sans-serif;
   columns: #4a4a4a;
+}
+/* font-size 0 take away unwanted padding */
+.two-columns{
+  font-size: 0;
+  text-align: center;
+  padding: 35px 0 40px;
+}
+
+.two-columns .column{
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.two-columns .padding{
+  padding: 20px;
+}
+/* fixes text below header when font-size set to 0 */
+.two-columns .content{
+  font-size: 15px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.button{
+  background-color: #1e5d7b;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -174,7 +207,28 @@ img{
     </tr>
 
     <!-- EMAIL LOGOS -->
+<tr>
+  <td style="background-color: #eaf6fb;border-top: 2px solid #21c6b8;"> 
+    <table width="100%">
+      <tr>
+        <td class="two-columns last">
+          <table class="column">
+            <tr>
+              <td><a href="#"><img src="./img/email-1.jpg" width="300px" style="max-width: 300px;" alt=""></a></td>
+            </tr>
+          </table>
 
+          <table class="column">
+            <tr>
+              <td><a href="#"><img src="./img/email-2.jpg" width="300px" style="max-width: 300px;" alt=""></a></td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
 
 
     <!-- FOOTER SECTION -->
