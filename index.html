@@ -82,8 +82,25 @@ img{
   letter-spacing: .5px;
 }
 
+.two-columns.last{
+  padding: 0!important;
+}
+
+a{
+  text-decoration: none;
+  color: #37cbbf;
+}
+
 @media screen and (max-width: 600px) {
-  
+  .two-columns .padding{
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+
+  .two-columns .content img{
+    width: 300px!important;
+    max-width: 300px!important;
+  }
 }
   
   </style>
@@ -162,7 +179,7 @@ img{
                       </tr>
                       <tr>
                         <td style="padding: 10px;">
-                        <p style="font-size: 17px; font-weight: bold;">Build Responsive Emails</p>
+                        <p style="font-size: 17px; font-weight: bold;">Responsive Emails</p>
                         <p style="padding-bottom: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur animi mollitia voluptatum eius neque!
                         </p>
                         <a href="#" class="button">HTML Email</a>
@@ -187,7 +204,7 @@ img{
                       </tr>
                       <tr>
                         <td style="padding: 10px;">
-                        <p style="font-size: 17px; font-weight: bold;">Create Custom Designs</p>
+                        <p style="font-size: 17px; font-weight: bold;">Custom Designs</p>
                         <p style="padding-bottom: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tenetur animi mollitia voluptatum eius neque!
                         </p>
                         <a href="#" class="button">Get Started</a>
@@ -232,6 +249,28 @@ img{
 
 
     <!-- FOOTER SECTION -->
+
+    <tr>
+      <td style="border-top: 2px solid #21c6b8; background-color: #565656; border-bottom: 4px solid #21c6b8;">
+        <table width="100%">
+
+          <tr>
+            <td style="padding: 50px 20px;text-align: center;color: #ffffff;">
+
+<a href="#"><img src="./img/html-email-white.png" width="230px" alt=""></a>
+<p style="padding-top: 8px;">See How its made</p>
+<p>It is not bad, getting use to inline css instead of stand alone style sheet</p>
+<p><a href="mailto:dextervalenc17@gmail.com">dextervalenc17@gmail.com</a></p>
+<!-- when veiwed on mobile, able to click and call -->
+<p><a href="tel:18888888888">867-5309</a></p>
+<p style="font-size: 10px;"><a href="#">UNSUBSCRIBE</a></p>
+
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
 
       </table>
     </center>
